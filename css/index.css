@@ -10,7 +10,7 @@
 }
 #landing-left {
     position: relative;
-    width: 900px;
+    width: 700px;
     z-index: 1;
     left: 5%;
 }
@@ -23,10 +23,12 @@
 #landing-left-text-title {
     background: white;
     margin-top: -30px;
-    border-bottom-right-radius: 20px;
 }
-#landing-left-text-button {
-
+#landing-left-text-button-container {
+    background: white;
+    margin-top: -70px;
+    padding-top: 70px;
+    border-bottom-right-radius: 20px;
 }
 
 #landing-right-image {

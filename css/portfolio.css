@@ -1,0 +1,50 @@
+.portfolio-section {
+    margin-top: 150px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#portfolio-level {
+    color: var(--primary);
+}
+#portfolio-class-name {
+    margin-top: 0px;
+}
+#portfolio-work {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.portfolio-col {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.portfolio-card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.portfolio-img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+#portfolio-card-description {
+    margin-top: 15px;
+    width: 100%;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+

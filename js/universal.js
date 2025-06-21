@@ -66,7 +66,7 @@ function closeMenu() {
     document.getElementById("menu-grayout").style = "opacity: 0; pointer-events: none;";
 };
 setInterval(function () {
-    if (window.scrollY <= 400) {
+    if (window.scrollY <= 200) {
         document.getElementById("menu-bar").style = "border: 1px solid transparent; background: transparent;";
     }
     else {
