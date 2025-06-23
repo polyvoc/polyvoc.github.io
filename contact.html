@@ -6,18 +6,63 @@
         <link rel="icon" href="./assets/logo-icon.png">
         <link rel="stylesheet" href="./css/universal.css">
         <link rel="stylesheet" href="./css/contact.css">
-        <script src="./js/universal.js"></script>
-        <script src="./js/contact.js"></script>
+        <script type="text/javascript" src="./js/universal.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init({
+                    publicKey: "Fm_qSuEIQyxy8tu9Y",
+                });
+            })();
+            window.onload = function() {
+                setHeaderFooter();
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_waaox8p', 'template_ukmzz8b', this)
+                        .then(() => {
+                            console.log('SUCCESS!');
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                            document.getElementById("contact-title").innerHTML = "Message Sent!"
+                            document.getElementById("right-confirm").style = "opacity: 100; pointer-events: all;";
+                            document.getElementById("contact-form").style = "opacity: 0; pointer-events: none; height: 0;";
+                        }, (error) => {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
     </head>
     <body>
         <header id="menu-main"></header>
-        <iframe id="map"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBtvIn3REj1-vHdhIq6Gw3THp3Uqbny1pQ
-                &q=Space+Needle,Seattle+WA">
-        </iframe>
+        <div id="contact-section">
+            <div id="left">
+                <iframe id="map"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBtvIn3REj1-vHdhIq6Gw3THp3Uqbny1pQ&q=polyvoc+studio+of+art&maptype=satellite">
+                </iframe>
+                <p class="normal-text" id="address">20 Miller Pl, Syosset, NY 1179</p>
+            </div>
+            <div id="right">
+                <p class="title-text" id="contact-title">Send Us A Message!</p>
+                <form id="contact-form">
+                    <label class="header-text contact-headers">Name</label><br>
+                    <input class="input-field" type="text" name="name" placeholder="Enter your name" required><br>
+                    <label class="header-text contact-headers">Email</label><br>
+                    <input class="input-field" type="email" name="email" placeholder="Enter your email" required><br>
+                    <label class="header-text contact-headers">Phone (Optional)</label><br>
+                    <input class="input-field" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="000-000-0000"><br>
+                    <label class="header-text contact-headers">Message</label><br>
+                    <textarea class="input-field" id="message-textarea" name="message" placeholder="Enter your message" required></textarea><br>
+                    <input class="button" type="submit" value="Submit">
+                </form>
+                <div id="right-confirm">
+                    <p class="header-text" id="thanksmessage">Thank you for reachinng out!</p>
+                    <button class="button" id="returnhome">Return to Home</button> 
+                </div>
+            </div>
+        </div>
         <footer id="contact-all"></footer>
     </body>
 </html>

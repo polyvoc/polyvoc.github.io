@@ -1,5 +1,5 @@
-window.onload = function() {
-    let header = `
+function setHeaderFooter() {
+let header = `
         <div id="menu-bar">
             <img id="menu-icon" src="./assets/logo-icon.png">
             <button class="clear-button" id="menu-bar-button" onclick="openMenu()">Menu</button>
@@ -55,6 +55,10 @@ window.onload = function() {
     document.getElementById("contact-all").innerHTML = footer;
 }
 
+window.onload = function() {
+    setHeaderFooter();
+}
+
 var width = window.screen.width;
 
 function openMenu() {
@@ -76,5 +80,6 @@ setInterval(function () {
 if (width > 1024) {
  
 }
+
 
 
