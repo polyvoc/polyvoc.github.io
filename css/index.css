@@ -212,7 +212,7 @@
 }
 #testimonials-testimonial {
     color: var(--borders);
-    width: 50%;
+    width: 800px;
 }
 #testimonials-quotation {
     color: var(--primary);
@@ -398,7 +398,7 @@
     }
     #testimonials-testimonial {
         font-size: 45px;
-        width: 100%;
+        width: 700px;
     }
     #testimonials-button-container {
         width: 100px;

@@ -258,9 +258,31 @@ function loadFunction() {
     linkInitiation();
 }
 
+function testmonialSwitch() {
+    if (window.location.pathname.includes("index")) {
+        var clicks = 1;
+        var numTestimonials = 2;
+        document.getElementById("next-quote").onclick = function() {
+            clicks++;
+            if (clicks > numTestimonials) {clicks = 1;}
+            if (clicks == 1) {
+                document.getElementById("testimonials-testimonial").innerHTML = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis em ipsam voluptatem quia voluptas sit aspernatur aut odit au.";
+                document.getElementById("testimonial-name").innerHTML = "Joan Smith, parent of a 3rd grader";
+                document.getElementById("testimonial-profile-img").src = "./assets/hero-art.jpg";
+            }
+            if (clicks == 2) {
+                document.getElementById("testimonials-testimonial").innerHTML = "h";
+                document.getElementById("testimonial-name").innerHTML = "John Doe, 3rd grade student";
+                document.getElementById("testimonial-profile-img").src = "./assets/blob.png";
+            }
+        }
+    }
+}
+
 window.onload = function() {
     loadFunction();
     changeCourse();
     switchCourse();
+    testmonialSwitch();
 }
 
