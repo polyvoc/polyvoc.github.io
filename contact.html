@@ -15,7 +15,7 @@
                 });
             })();
             window.onload = function() {
-                setHeaderFooter();
+                loadFunction();
                 document.getElementById('contact-form').addEventListener('submit', function(event) {
                     event.preventDefault();
                     emailjs.sendForm('service_waaox8p', 'template_ukmzz8b', this)
@@ -52,13 +52,13 @@
                     <label class="header-text contact-headers">Email</label><br>
                     <input class="input-field" type="email" name="email" placeholder="Enter your email" required><br>
                     <label class="header-text contact-headers">Phone (Optional)</label><br>
-                    <input class="input-field" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="000-000-0000"><br>
+                    <input class="input-field" type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="12" placeholder="0000000000"><br>
                     <label class="header-text contact-headers">Message</label><br>
                     <textarea class="input-field" id="message-textarea" name="message" placeholder="Enter your message" required></textarea><br>
                     <input class="button" type="submit" value="Submit">
                 </form>
                 <div id="right-confirm">
-                    <p class="header-text" id="thanksmessage">Thank you for reachinng out!</p>
+                    <p class="header-text" id="thanksmessage">Thank you for reaching out!</p>
                     <button class="button" id="returnhome">Return to Home</button> 
                 </div>
             </div>

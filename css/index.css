@@ -64,7 +64,6 @@
     margin-top: -120px;
     background: var(--primary);
     border-top-right-radius: 20px;
-    
 }
 
 #about-cards {
@@ -135,10 +134,10 @@
 #course-card-price {
     color: var(--priceconfirmation);
 }
-#course-card-details {
+.course-card-details {
     width: 175px;
 }
-#course-card-details, #course-card-book {
+.course-card-details, .course-card-book {
     margin-top: 15px;
 }
 
@@ -276,3 +275,150 @@
 }
 
 
+@media only screen and (max-width: 1024px) {
+    #landing {
+        margin-top: 500px;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    #landing-right-image {
+        display: none;
+    }
+    #landing-left {
+        width: 100%;
+    }
+    #landing-left-text-title{
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    #about {
+        margin-top: 60vh;
+        height: auto;
+        width: 105%;
+        padding-bottom: 100px;
+    }
+    #about-title {
+        margin: 0;
+    }
+    #about-cards {
+        flex-direction: column;
+        margin-top: 50px;
+        width: 90%;
+    }
+    #about-what, #about-mission {
+        width: 95%;
+    }
+    #about-mission {
+        margin-top: 35px;
+    }
+    #about-mission-text {
+        font-size: 45px;
+        line-height: 100px;
+        height: auto;
+        width: auto;        
+    }
+
+    #courses {
+        margin-top: 300px;
+        width: 100%;
+        margin-left: 2.5%;
+    }
+    #courses-description {
+        font-size: 45px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    #course-card-level {
+        font-size: 45px;
+    }
+    #course-card-title, #course-card-price {
+        margin-top: 0;
+    }
+    .course-card-details {
+        width: 500px;
+        height: 150px;
+        font-size: 40px;
+    }
+    .course-card-book {
+        margin-top: 20px;
+    }
+    #course-card {
+        margin-top: 50px;
+    }
+
+    #courses-options{
+        flex-direction: column;
+    }
+    #portfolio {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 300px;
+    }
+
+    #portfolio-left {
+        width: 105%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    #portfolio-description {
+        width: 90%;
+        font-size: 45px;
+    }
+    #portfolio-right {
+        width: 90%;
+        margin: 0;
+    }
+    #portfolio-image {
+        width: 100%;
+        height: 600px;
+    }
+    #portfolio-image-description {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    #testimonials {
+        margin-top: 300px;
+        width: 90%;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 2.5%;
+    }
+    #testimonials-title {
+        text-align: center;
+    }
+    #testimonials-quotation {
+        display: none;
+    }
+    #testimonials-testimonial {
+        font-size: 45px;
+        width: 100%;
+    }
+    #testimonials-button-container {
+        width: 100px;
+    }
+    #next-quote {
+        width: 100px;
+        height: 100px;
+        font-size: 45px;
+    }
+    #testimonial-profile-img {
+        width: 75px;
+        height: 75px;
+    }
+    #testimonial-name {
+        font-size: 45px;
+    }
+
+
+    #cta-blob {
+        display: none;
+    }
+
+}

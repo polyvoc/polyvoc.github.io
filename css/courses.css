@@ -47,6 +47,11 @@
     padding-bottom: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    transition: 0.2s;
+}
+.courses-menu-card:hover {
+    background: var(--lighthover);
+    cursor: pointer;
 }
 #courses-menu-select-1 {
     border: 1px solid var(--borders);
@@ -59,3 +64,31 @@
     margin-top: -20px;
 }
 
+@media only screen and (max-width: 1024px) {
+    #courses {
+        margin-top: 300px;
+        flex-direction: column;
+    }
+    #courses-main {
+        width: 100%;
+    }
+    #courses-main-titles {
+        margin-top: -100px;
+    }
+
+    #courses-menu {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .courses-menu-card {
+        width: 95%;
+    }
+    #courses-menu-level {
+        font-size: 35px;
+    }
+    #courses-menu-name {
+        font-size: 50px;
+        margin-top: -25px;
+    }
+
+}

@@ -40,8 +40,34 @@
     line-height: 25px;
 }
 
+@media only screen and (max-width: 1024px) {
+    #portfolio-section-1 {
+        margin-top: 400px;
+    }
+    #portfolio-work {
+        flex-direction: column;
+        border: 2px solid black;
+    }
+    .portfolio-col {
+        width: 100%;
+    }
+    .portfolio-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-img {
+        width: 90%;
+    }
+    #portfolio-card-description {
+        width: 90%;
+        font-size: 45px;
+        line-height: 60px;
+    }
 
-
+}
 
 
 

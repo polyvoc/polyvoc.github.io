@@ -73,3 +73,48 @@
 #contact {
     margin-top: 100px;
 }
+
+@media only screen and (max-width: 1024px) {
+    #contact-section {
+        margin-top: 400px;
+        flex-direction: column-reverse;
+        margin-left: 2.5%;
+    }
+    #left, #right {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #contact-form {
+        margin-top: 100px;
+    }
+    .input-field {
+        font-size: 45px;
+        font-size: "Inter";
+        margin-top: 30px;
+        width: 100%;
+        height: 120px;
+        padding-left: 30px;
+        margin-bottom: 70px;
+    }
+    #message-textarea {
+        padding-top: 30px;
+    }
+    #thanksmessage {
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+    #returnhome {
+        margin-bottom: 200px;
+    }
+
+    #map {
+        width: 102.5%;
+        height: 1000px;
+        margin-left: 2.5%;
+    }
+    #address {
+        font-size: 45px;
+        margin-left: 2.5%;
+    }
+}
