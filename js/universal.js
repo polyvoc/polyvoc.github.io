@@ -194,6 +194,9 @@ function detailsButton(level) {
 }
 
 function changeToCourse1() {
+    document.getElementById("courses-menu-select-1").style="border: 1px solid var(--borders);";
+    document.getElementById("courses-menu-select-2").style="border: 1px solid transparent;";
+    document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 1 Class";
     document.getElementById("courses-main-price").innerHTML = "$1111";
     document.getElementById("courses-main-name").innerHTML = "Kindergarten - 3rd Grade";
@@ -201,6 +204,9 @@ function changeToCourse1() {
     "Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat. Underit in voluptate velit esse. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br><br>- Enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>- Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat. ";
 }
 function changeToCourse2() {
+    document.getElementById("courses-menu-select-2").style="border: 1px solid var(--borders);";
+    document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
+    document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 2 Class";
     document.getElementById("courses-main-price").innerHTML = "$1234";
     document.getElementById("courses-main-name").innerHTML = "4th Grade - 9th Grade";
@@ -208,6 +214,9 @@ function changeToCourse2() {
     "Irure dolor in reprehenderit in voluptfugiat nulla pariatur. Excepteur sint occaecat cupidatat. Underit in voluptate velit esse. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br><br>- Enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>- Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat. ";
 }
 function changeToCourse3() {
+    document.getElementById("courses-menu-select-3").style="border: 1px solid var(--borders);";
+    document.getElementById("courses-menu-select-2").style="border: 1px solid transparent;";
+    document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 3 Class";
     document.getElementById("courses-main-price").innerHTML = "$4235";
     document.getElementById("courses-main-name").innerHTML = "College Portfolio Prep";
@@ -222,7 +231,7 @@ function changeCourse() {
         }
         if (localStorage.getItem("level") == 2) {
             changeToCourse2()
-           localStorage.removeItem("level");
+            localStorage.removeItem("level");
         }
         if (localStorage.getItem("level") == 3) {
            changeToCourse3()      
