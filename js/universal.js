@@ -270,20 +270,26 @@ function loadFunction() {
 function testmonialSwitch() {
     if (window.location.pathname.includes("index")) {
         var clicks = 1;
-        var numTestimonials = 2;
+        var numTestimonials = 3;
         document.getElementById("next-quote").onclick = function() {
             clicks++;
             if (clicks > numTestimonials) {clicks = 1;}
             if (clicks == 1) {
-                document.getElementById("testimonials-testimonial").innerHTML = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis em ipsam voluptatem quia voluptas sit aspernatur aut odit au.";
-                document.getElementById("testimonial-name").innerHTML = "Joan Smith, parent of a 3rd grader";
-                document.getElementById("testimonial-profile-img").src = "./assets/hero-art.jpg";
+                document.getElementById("testimonials-testimonial").innerHTML = "Before joining Polyvoc, my son could barely sit still for 10 minutes. Now he’s focused for the whole class and asks to draw even after we get home. It’s been amazing to see how engaged he is with art!";
+                document.getElementById("testimonial-name").innerHTML = "Sophia, parent of a 6-year-old";
+                document.getElementById("testimonial-profile-img").src = "https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg";
             }
             if (clicks == 2) {
-                document.getElementById("testimonials-testimonial").innerHTML = "h";
-                document.getElementById("testimonial-name").innerHTML = "John Doe, 3rd grade student";
-                document.getElementById("testimonial-profile-img").src = "./assets/blob.png";
+                document.getElementById("testimonials-testimonial").innerHTML = "My daughter used to be shy and hesitant about showing her art, but since joining Polyvoc, she's grown so much in skill and confidence. The teachers truly understand how to connect with each child and bring out their creativity. We’re so grateful.";
+                document.getElementById("testimonial-name").innerHTML = "Emma, parent of 10-year-old student";
+                document.getElementById("testimonial-profile-img").src = "https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg";
             }
+            if (clicks == 3) {
+                document.getElementById("testimonials-testimonial").innerHTML = "Polyvoc helped me prepare my portfolio for art high school, and I actually got accepted into my top choice! The feedback was always supportive but constructive, and I learned how to express my ideas clearly through my artwork.";
+                document.getElementById("testimonial-name").innerHTML = "Lucas, high school student";
+                document.getElementById("testimonial-profile-img").src = "https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg";
+            }
+
         }
     }
 }
