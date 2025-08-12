@@ -197,31 +197,45 @@ function changeToCourse1() {
     document.getElementById("courses-menu-select-1").style="border: 1px solid var(--borders);";
     document.getElementById("courses-menu-select-2").style="border: 1px solid transparent;";
     document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
+    document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 1 Class";
-    document.getElementById("courses-main-price").innerHTML = "$1111";
-    document.getElementById("courses-main-name").innerHTML = "Kindergarten - 3rd Grade";
+    document.getElementById("courses-main-price").innerHTML = "$999";
+    document.getElementById("courses-main-name").innerHTML = "Grades K - 2";
     document.getElementById("courses-main-text").innerHTML = 
-    "Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat. Underit in voluptate velit esse. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br><br>- Enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>- Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat. ";
+    "Inspired by American art education principles, this course invites young artists on a playful journey where stories come to life through art. Using a wide range of materials, children experiment, imagine, and create in a welcoming classroom that celebrates every idea. With no “wrong” answers, they’re encouraged to explore freely, developing both creativity and a personal sense of aesthetics through hands-on, story-driven projects.<br><br>Original Price: $1125";
 }
 function changeToCourse2() {
     document.getElementById("courses-menu-select-2").style="border: 1px solid var(--borders);";
     document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
     document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
+    document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 2 Class";
-    document.getElementById("courses-main-price").innerHTML = "$1234";
-    document.getElementById("courses-main-name").innerHTML = "4th Grade - 9th Grade";
+    document.getElementById("courses-main-price").innerHTML = "$999";
+    document.getElementById("courses-main-name").innerHTML = "Grades 3 - 5";
     document.getElementById("courses-main-text").innerHTML = 
-    "Irure dolor in reprehenderit in voluptfugiat nulla pariatur. Excepteur sint occaecat cupidatat. Underit in voluptate velit esse. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br><br>- Enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>- Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat. ";
+    "Students will explore a wide range of materials, learning how to use each one to serve their ideas and bring drawing-based projects to life. Through sketching, basic shaping, and themed creations, they’ll discover how materials can enhance storytelling in art while building both creative thinking and technical skills.<br><br>Original Price: $1125";
 }
 function changeToCourse3() {
     document.getElementById("courses-menu-select-3").style="border: 1px solid var(--borders);";
     document.getElementById("courses-menu-select-2").style="border: 1px solid transparent;";
     document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
+    document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 3 Class";
-    document.getElementById("courses-main-price").innerHTML = "$4235";
-    document.getElementById("courses-main-name").innerHTML = "College Portfolio Prep";
+    document.getElementById("courses-main-price").innerHTML = "$999";
+    document.getElementById("courses-main-name").innerHTML = "Grades 6 - 8";
     document.getElementById("courses-main-text").innerHTML = 
-    "Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu atat. Underit in voluptate velit esse. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br><br>- Enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>- Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat. ";
+    "Students will build strong foundations in sketching, shaping, structure, and color, with an emphasis on precision and craftsmanship. Alongside honing technical skills, they will explore diverse media to serve their ideas, strengthen observational abilities, and refine their creative process—ensuring that strong concepts remain at the core of their work.<br><br>Original Price: $1125";
+}
+function changeToCourse4() {
+    document.getElementById("courses-menu-select-4").style="border: 1px solid var(--borders);";
+    document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
+    document.getElementById("courses-menu-select-2").style="border: 1px solid transparent;";
+    document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
+    document.getElementById("courses-main-level").innerHTML = "Level 4 Class";
+    document.getElementById("courses-main-price").innerHTML = "Varies";
+    document.getElementById("courses-main-name").innerHTML = "College Portfolio";
+    document.getElementById("courses-main-text").innerHTML = 
+    "Students prepare for their college art portfolio, building on learned skills and foundations. Price varies based on individual needs and packages.";
 }
 function changeCourse() {
     if (window.location.pathname.includes("courses")) {
@@ -236,6 +250,10 @@ function changeCourse() {
         if (localStorage.getItem("level") == 3) {
            changeToCourse3()      
            localStorage.removeItem("level");
+        } 
+        if (localStorage.getItem("level") == 4) {
+           changeToCourse4()      
+           localStorage.removeItem("level");
         }  
     }
 }
@@ -246,19 +264,29 @@ function switchCourse() {
             document.getElementById("courses-menu-select-1").style="border: 1px solid var(--borders);";
             document.getElementById("courses-menu-select-2").style="border: 1px solid transparent;";
             document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
+            document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
             changeToCourse1()
         }
         document.getElementById("courses-menu-select-2").onclick = function() {
             document.getElementById("courses-menu-select-2").style="border: 1px solid var(--borders);";
             document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
             document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
+            document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
             changeToCourse2()
         }
         document.getElementById("courses-menu-select-3").onclick = function() {
             document.getElementById("courses-menu-select-3").style="border: 1px solid var(--borders);";
             document.getElementById("courses-menu-select-2").style="border: 1px solid transparent;";
             document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
+            document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
             changeToCourse3()
+        }
+         document.getElementById("courses-menu-select-4").onclick = function() {
+            document.getElementById("courses-menu-select-4").style="border: 1px solid var(--borders);";
+            document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
+            document.getElementById("courses-menu-select-2").style="border: 1px solid transparent;";
+            document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
+            changeToCourse4()
         }
     }
 }

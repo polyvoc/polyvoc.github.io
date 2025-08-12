@@ -19,10 +19,13 @@
     margin-top: -50px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    width: 100%;
 }
 #courses-main-price {
     color: var(--priceconfirmation);
+    margin: 0;
+    padding: 0;
 }
 #courses-main-text {
     margin-top: -20px;
