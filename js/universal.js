@@ -199,10 +199,10 @@ function changeToCourse1() {
     document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
     document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 1 Class";
-    document.getElementById("courses-main-price").innerHTML = "$999";
+    document.getElementById("courses-main-price").innerHTML = "$1125";
     document.getElementById("courses-main-name").innerHTML = "Grades K - 2";
     document.getElementById("courses-main-text").innerHTML = 
-    "Inspired by American art education principles, this course invites young artists on a playful journey where stories come to life through art. Using a wide range of materials, children experiment, imagine, and create in a welcoming classroom that celebrates every idea. With no “wrong” answers, they’re encouraged to explore freely, developing both creativity and a personal sense of aesthetics through hands-on, story-driven projects.<br><br>Original Price: $1125 (Discounted until 8/31)<br>Class Size: 4 - 6 students<br><br>There are 30 courses total for a year.<br>- All K - 8 classes for Fall 2025 run from September 15th to December 13th.<br>- All K - 8 classes for Spring 2026 run from January 12th to June 6th.";
+    "Inspired by American art education principles, this course invites young artists on a playful journey where stories come to life through art. Using a wide range of materials, children experiment, imagine, and create in a welcoming classroom that celebrates every idea. With no “wrong” answers, they’re encouraged to explore freely, developing both creativity and a personal sense of aesthetics through hands-on, story-driven projects.<br><br>Class Size: 4 - 6 students<br><br>There are 30 courses total for a year.<br>- All K - 8 classes for Fall 2025 run from September 15th to December 13th.<br>- All K - 8 classes for Spring 2026 run from January 12th to June 6th.";
 }
 function changeToCourse2() {
     document.getElementById("courses-menu-select-2").style="border: 1px solid var(--borders);";
@@ -210,10 +210,10 @@ function changeToCourse2() {
     document.getElementById("courses-menu-select-3").style="border: 1px solid transparent;";
     document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 2 Class";
-    document.getElementById("courses-main-price").innerHTML = "$999";
+    document.getElementById("courses-main-price").innerHTML = "$1125";
     document.getElementById("courses-main-name").innerHTML = "Grades 3 - 5";
     document.getElementById("courses-main-text").innerHTML = 
-    "Students will explore a wide range of materials, learning how to use each one to serve their ideas and bring drawing-based projects to life. Through sketching, basic shaping, and themed creations, they’ll discover how materials can enhance storytelling in art while building both creative thinking and technical skills.<br><br>Original Price: $1125 (Discounted until 8/31)<br>Class Size: 4 - 6 students<br><br>There are 30 courses total for a year.<br>- All K - 8 classes for Fall 2025 run from September 15th to December 13th.<br>- All K - 8 classes for Spring 2026 run from January 12th to June 6th.";
+    "Students will explore a wide range of materials, learning how to use each one to serve their ideas and bring drawing-based projects to life. Through sketching, basic shaping, and themed creations, they’ll discover how materials can enhance storytelling in art while building both creative thinking and technical skills.<br><br>Class Size: 4 - 6 students<br><br>There are 30 courses total for a year.<br>- All K - 8 classes for Fall 2025 run from September 15th to December 13th.<br>- All K - 8 classes for Spring 2026 run from January 12th to June 6th.";
 }
 function changeToCourse3() {
     document.getElementById("courses-menu-select-3").style="border: 1px solid var(--borders);";
@@ -221,10 +221,10 @@ function changeToCourse3() {
     document.getElementById("courses-menu-select-1").style="border: 1px solid transparent;";
     document.getElementById("courses-menu-select-4").style="border: 1px solid transparent;";
     document.getElementById("courses-main-level").innerHTML = "Level 3 Class";
-    document.getElementById("courses-main-price").innerHTML = "$999";
+    document.getElementById("courses-main-price").innerHTML = "$1125";
     document.getElementById("courses-main-name").innerHTML = "Grades 6 - 8";
     document.getElementById("courses-main-text").innerHTML = 
-    "Students will build strong foundations in sketching, shaping, structure, and color, with an emphasis on precision and craftsmanship. Alongside honing technical skills, they will explore diverse media to serve their ideas, strengthen observational abilities, and refine their creative process—ensuring that strong concepts remain at the core of their work.<br><br>Original Price: $1125 (Discounted until 8/31)<br>Class Size: 4 - 6 students<br><br>There are 30 courses total for a year.<br>- All K - 8 classes for Fall 2025 run from September 15th to December 13th.<br>- All K - 8 classes for Spring 2026 run from January 12th to June 6th.";
+    "Students will build strong foundations in sketching, shaping, structure, and color, with an emphasis on precision and craftsmanship. Alongside honing technical skills, they will explore diverse media to serve their ideas, strengthen observational abilities, and refine their creative process—ensuring that strong concepts remain at the core of their work.<br><br>Class Size: 4 - 6 students<br><br>There are 30 courses total for a year.<br>- All K - 8 classes for Fall 2025 run from September 15th to December 13th.<br>- All K - 8 classes for Spring 2026 run from January 12th to June 6th.";
 }
 function changeToCourse4() {
     document.getElementById("courses-menu-select-4").style="border: 1px solid var(--borders);";
